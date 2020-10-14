@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite scroll blog post</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="text-center">Blog posts</h1>
+
+        <label for="input">Filter blog content</label>
+        <input type="text" id="input" class="maw-400">
+
+        <div class="text-center">
+            <button id="filter" class="bg-purple white">Filter posts</button>
+            <button id="load-more" class="bg-steel white">Load more</button>
+        </div>
+
+        <div id="posts" class="grid"></div>
+
+    </div>
+
+    <div id="preloader" class="hide">
+        <div class="preload-animation">
+            <div class="preload-line"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
